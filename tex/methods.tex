@@ -1,0 +1,31 @@
+The HY scale is not true ordinal in some few instances- see \cite{Goetz2004} and \cite{Martinez-Martin2018}. This should be considered when/if doing ordinal regression.
+
+
+\subsection{Data wrangling}
+What was done to the data?
+The data was downloaded from the CPP data base on September 18 2019. 
+
+\begin{itemize}
+    \item Downloaded from CPP 18/09 2019
+    \item QS domain imported into Python (pandas data frame)
+    \item Half H&Y scores converted into whole scores according to section \ref{subsec:HY_scores}
+
+\end{itemize}
+
+
+\subsection{Modified vs. Original H&Y scores}\label{subsec:HY_scores}
+
+%include the image of how many had half versus whole scores
+%Include table of original vs modified HY score
+%Include description of retropulsion test
+The Movement Disorder Society recommends using the H&Y scale in its original form to present patients and patient groups. Despite there having been made no formal clinimetric testing of the modified H&Y scale, many physicians instead utilize the modified H&Y scale \cite{Goetz2004}.
+The the data used for this thesis, it seems that some subjects have been rated according to the original, and some according to the modified HY scale.
+
+
+
+\subsection{Preliminary Random Forest}
+As a preliminary analysis, a random forest was made to classify some stuff.
+
+
+\subsection{Validation}
+To validate how well the methods generalize, cross-validation was carried out. Each study was consecutively left out of the training data set in order to estimate how well a model would generalize to data from a new study. 
